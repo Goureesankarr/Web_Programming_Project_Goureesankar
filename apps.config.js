@@ -92,7 +92,7 @@ const apps = [
     },
     {
         id: "github",
-        title: "Goureesankar",
+        title: "Goureesankar S Nair",
         icon: './themes/Yaru/apps/linkedin.png',
         disabled: false,
         favourite: false,
@@ -103,24 +103,24 @@ const apps = [
     },
     {
         id: "github",
-        title: "Ananya Ashesh",
+        title: "Aaditya Tripathi",
+        icon: './themes/Yaru/apps/instagram.png',
+        disabled: false,
+        favourite: false,
+        desktop_shortcut: true,
+        isExternalApp: true,
+        url: "https://www.instagram.com/aaditripi?igsh=MWpvMzg1bDNyeWphZw==",
+        screen: () => {},
+    },
+    {
+        id: "github",
+        title: "Annanya Ashesh",
         icon: './themes/Yaru/apps/instagram.png',
         disabled: false,
         favourite: false,
         desktop_shortcut: true,
         isExternalApp: true,
         url: "https://www.instagram.com/annanya.ashesh?igsh=MWl1ZG80cXNsdHV2ZQ==",
-        screen: () => {},
-    },
-    {
-        id: "github",
-        title: "Aaditya Tripathi",
-        icon: './themes/Yaru/apps/linkedin.png',
-        disabled: false,
-        favourite: false,
-        desktop_shortcut: true,
-        isExternalApp: true,
-        url: "https://www.linkedin.com/in/aditya-tripathi-50b221275/?trk=public_profile_browsemap&originalSubdomain=in",
         screen: () => {},
     },
     {
@@ -134,9 +134,7 @@ const apps = [
         url: "https://vtop.vit.ac.in/vtop/open/page",
         screen: () => {},
     },
-    
-   
+    ,
 ]
 
 export default apps;
-
