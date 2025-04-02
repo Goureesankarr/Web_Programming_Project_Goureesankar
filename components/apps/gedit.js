@@ -45,18 +45,30 @@ export class Gedit extends Component {
         const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID;
         const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
         const templateParams = {
-            'name': name,
-            'subject': subject,
-            'message': message,
-        }
+            name: name,
+            subject: subject,
+            message: message,
+            email: name,           // Assuming name field holds email
+            title: subject,        // Reuse subject for title
+            time: new Date().toLocaleString() // Add current time
+          };
 
-        emailjs.send(serviceID, templateID, templateParams).then(() => {
-            this.setState({ sending: false });
-            $("#close-gedit").trigger("click");
-        }).catch(() => {
-            this.setState({ sending: false });
-            $("#close-gedit").trigger("click");
-        })
+          console.log("📨 Sending with params:", templateParams);
+          console.log("Service ID:", serviceID);
+          console.log("Template ID:", templateID);
+          console.log("User ID:", process.env.NEXT_PUBLIC_USER_ID);
+          
+          emailjs.send(serviceID, templateID, templateParams)
+            .then(() => {
+              console.log("✅ Email successfully sent!");
+              this.setState({ sending: false });
+              $("#close-gedit").trigger("click");
+            })
+            .catch((error) => {
+              console.error("❌ EmailJS Error:", error);
+              alert("Email failed to send. Check the browser console for details.");
+              this.setState({ sending: false });
+            });
 
         ReactGA.event({
             category: "Send Message",

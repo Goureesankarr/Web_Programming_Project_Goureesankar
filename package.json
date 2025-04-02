@@ -1,8 +1,8 @@
 {
-  "name": "vivek9patel-portfolio",
+  "name": "web-programming-project-goureesankar",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://vivek9patel.github.io/",
+  "homepage": "https://Goureesankarr.github.io/Web_Programming_Project_Goureesankar/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

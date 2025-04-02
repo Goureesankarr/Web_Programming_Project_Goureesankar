@@ -29,7 +29,7 @@ const apps = [
     },
     {
         id: "about-vivek",
-        title: "About Vivek",
+        title: "About Us",
         icon: './themes/Yaru/system/user-home.png',
         disabled: false,
         favourite: true,
@@ -92,25 +92,51 @@ const apps = [
     },
     {
         id: "github",
-        title: "GitHub",
-        icon: './themes/Yaru/apps/github.png',
+        title: "Goureesankar",
+        icon: './themes/Yaru/apps/linkedin.png',
         disabled: false,
         favourite: false,
         desktop_shortcut: true,
         isExternalApp: true,
-        url: "https://github.com/vivek9patel",
+        url: "https://www.linkedin.com/in/goureesankar-s-nair-587501255/",
         screen: () => {},
     },
     {
-        id: "tars",
-        title: "Ask Tars",
-        icon: './themes/Yaru/apps/tars.svg',
+        id: "github",
+        title: "Ananya Ashesh",
+        icon: './themes/Yaru/apps/instagram.png',
         disabled: false,
         favourite: false,
         desktop_shortcut: true,
         isExternalApp: true,
-        url: "https://www.vivek9patel.com/tars"
+        url: "https://www.instagram.com/annanya.ashesh?igsh=MWl1ZG80cXNsdHV2ZQ==",
+        screen: () => {},
     },
+    {
+        id: "github",
+        title: "Aaditya Tripathi",
+        icon: './themes/Yaru/apps/linkedin.png',
+        disabled: false,
+        favourite: false,
+        desktop_shortcut: true,
+        isExternalApp: true,
+        url: "https://www.linkedin.com/in/aditya-tripathi-50b221275/?trk=public_profile_browsemap&originalSubdomain=in",
+        screen: () => {},
+    },
+    {
+        id: "github",
+        title: "VTOP",
+        icon: './themes/Yaru/apps/vtop.png',
+        disabled: false,
+        favourite: false,
+        desktop_shortcut: true,
+        isExternalApp: true,
+        url: "https://vtop.vit.ac.in/vtop/open/page",
+        screen: () => {},
+    },
+    
+   
 ]
 
 export default apps;
+
